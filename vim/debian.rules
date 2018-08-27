@@ -1,0 +1,50 @@
+#!/usr/bin/make -f
+
+build: build-stamp
+build-stamp:
+	dh_testdir
+	./configure \
+	  --with-features=huge \
+	  --enable-multibyte \
+	  --disable-pythoninterp \
+	  --enable-python3interp \
+	  --with-python3-config-dir=$(shell python3-config --configdir) \
+	  --enable-rubyinterp \
+	  --enable-perlinterp=yes \
+	  --enable-luainterp=yes \
+	  --enable-gui=gtk2 \
+	  --enable-cscope \
+	  --enable-fail-if-missing \
+	  --prefix=/usr
+	make
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+	make clean || true
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	make install DESTDIR=$(CURDIR)/debian/tmp
+
+binary-indep: build install
+
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_install
+	dh_installchangelogs
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install
+
