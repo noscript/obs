@@ -10,6 +10,7 @@ Build-Depends-Indep: docbook-utils, jadetex, texlive-htmlxml, docbook-xml, ghost
 
 Package: vim-upstream
 Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: gvim, vim, vim-common, vim-runtime, vim-doc, vim-gtk, vim-gui-common, vim-lua, vim-python, vim-ruby, vim-tcl, xxd
 Conflicts: gvim, vim, vim-common, vim-runtime, vim-doc, vim-gtk, vim-gui-common, vim-lua, vim-python, vim-ruby, vim-tcl, xxd
 Replaces: gvim, vim, vim-common, vim-runtime, vim-doc, vim-gtk, vim-gui-common, vim-lua, vim-python, vim-ruby, vim-tcl, xxd
