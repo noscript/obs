@@ -17,7 +17,6 @@
     <param name="url">https://github.com/vim/vim</param>
     <param name="filename">vim</param>
     <param name="versionrewrite-pattern">v(.*)</param>
-    <param name="versionrewrite-replacement">2:\1</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@</param>
   </service>
   <service name="recompress">
