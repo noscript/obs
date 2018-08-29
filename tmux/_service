@@ -16,6 +16,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/tmux/tmux</param>
     <param name="filename">tmux</param>
+    <param name="revision">refs/tags/2.7</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@</param>
   </service>
   <service name="recompress">
