@@ -1,0 +1,12 @@
+Source: numix-gtk-theme
+Section: x11
+Priority: extra
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/numixproject/numix-gtk-theme
+Standards-Version: 4.1.1
+Build-Depends: debhelper (>= 10), libgdk-pixbuf2.0-dev, libglib2.0-bin, libxml2-utils, ruby-sass
+
+Package: numix-dark-gtk-theme
+Architecture: all
+Depends: gtk2-engines-murrine (>= 0.98), ${misc:Depends}
+Description: Numix theme with dark flavor.
