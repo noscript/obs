@@ -7,7 +7,8 @@ endef
 build: build-stamp
 build-stamp:
 	dh_testdir
-	sed -i 's/Numix/Numix Dark/' Makefile
+	sed -i 's/Numix/Numix-Dark/' Makefile
+	$(call substitute,src,Numix,Numix Dark)
 
 	$(call substitute,src/gtk-2.0,base_color:#[0-9a-f]\+,base_color:#333333)
 	$(call substitute,src/gtk-2.0,bg_color:#[0-9a-f]\+,bg_color:#2d2d2d)
