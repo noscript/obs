@@ -29,7 +29,6 @@ binary-arch: build install
 	dh_install
 	dh_installchangelogs
 	dh_installdeb
-	dh_shlibdeps
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
