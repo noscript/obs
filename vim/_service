@@ -8,7 +8,6 @@
     <param name="extract">debian.changelog</param>
     <param name="extract">debian.compat</param>
     <param name="extract">debian.control</param>
-    <param name="extract">debian.install</param>
     <param name="extract">debian.rules</param>
     <param name="extract">vim.dsc</param>
   </service>
