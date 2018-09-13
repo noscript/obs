@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Sergey Vlasov <sergey@vlasov.me>
 Homepage: https://snwh.org/paper
 Standards-Version: 4.1.1
-Build-Depends: debhelper (>= 10)
+Build-Depends: debhelper (>= 10), meson, ninja-build
 
 Package: paper-icon-theme
 Architecture: all
