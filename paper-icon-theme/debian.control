@@ -1,0 +1,12 @@
+Source: paper-icon-theme
+Section: x11
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://snwh.org/paper
+Standards-Version: 4.1.1
+Build-Depends: debhelper (>= 10)
+
+Package: paper-icon-theme
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Paper Icon Theme built from upstream.
