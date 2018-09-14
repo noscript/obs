@@ -15,6 +15,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/snwh/paper-icon-theme</param>
     <param name="filename">paper-icon-theme</param>
+    <param name="revision">refs/tags/v1.4.0</param>
     <param name="versionrewrite-pattern">v\.?(.*)</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@</param>
   </service>
