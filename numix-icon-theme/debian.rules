@@ -2,3 +2,7 @@
 
 %:
 	dh $@
+
+override_dh_auto_build:
+	sed -i 's/\(Inherits\)=/\1=Paper,/' Numix/index.theme
+	dh_auto_build
