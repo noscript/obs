@@ -7,4 +7,4 @@ DEBTRANSFORM-RELEASE: 1
 Maintainer: Sergey Vlasov <sergey@vlasov.me>
 Homepage: https://snwh.org/paper
 Standards-Version: 4.1.1
-Build-Depends: debhelper (>= 10), meson, ninja-build
+Build-Depends: debhelper (>= 10), python3-pip, ninja-build
