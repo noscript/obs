@@ -15,7 +15,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/noscript/mygestures</param>
     <param name="filename">mygestures</param>
-    <param name="versionformat">0~%cd.git@TAG_OFFSET@</param>
+    <param name="versionformat">0~%cd.git</param>
   </service>
   <service name="recompress">
     <param name="file">_service:tar_scm:mygestures-*.tar</param>
