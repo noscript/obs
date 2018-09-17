@@ -1,0 +1,26 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/noscript/mygestures-obs</param>
+    <param name="filename">obs</param>
+    <param name="versionformat">%h</param>
+    <param name="extension">tar_</param>
+    <param name="extract">debian.changelog</param>
+    <param name="extract">debian.compat</param>
+    <param name="extract">debian.control</param>
+    <param name="extract">debian.rules</param>
+    <param name="extract">mygestures.dsc</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/noscript/mygestures</param>
+    <param name="filename">mygestures</param>
+    <param name="revision">without-brush</param>
+    <param name="versionformat">0~%cd.git@TAG_OFFSET@</param>
+  </service>
+  <service name="recompress">
+    <param name="file">_service:tar_scm:mygestures-*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>
