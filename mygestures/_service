@@ -15,7 +15,6 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/noscript/mygestures</param>
     <param name="filename">mygestures</param>
-    <param name="revision">without-brush</param>
     <param name="versionformat">0~%cd.git@TAG_OFFSET@</param>
   </service>
   <service name="recompress">
