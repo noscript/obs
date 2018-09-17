@@ -4,6 +4,4 @@
 	dh $@
 
 override_dh_auto_configure:
-	echo "AM_MAINTAINER_MODE([enable])" > configure.ac
-	./autogen.sh
-	dh_auto_configure
+	./configure
