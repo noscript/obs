@@ -5,4 +5,4 @@
 
 override_dh_auto_configure:
 	sed -i '/sysconf_DATA/d' ./Makefile.am
-	./configure
+	dh_auto_configure
