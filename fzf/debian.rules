@@ -3,10 +3,11 @@
 export DH_GOPKG := github.com/junegunn/fzf
 
 %:
-	dh $@ -Sgolang --with=golang
+	dh $@ --buildsystem=golang --with=golang
 
 override_dh_auto_install:
 	dh_auto_install
 	rm -rf $(CURDIR)/debian/fzf/usr/share/gocode
 	rm -rf $(CURDIR)/debian/fzf/usr/share/doc
+	man usr/share
 
