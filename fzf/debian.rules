@@ -7,4 +7,5 @@ export DH_GOPKG := github.com/junegunn/fzf
 
 override_dh_auto_install:
 	dh_auto_install
-	rm $(CURDIR)/debian/tmp/usr/share
+	rm -rf $(CURDIR)/debian/tmp/usr/share
+
