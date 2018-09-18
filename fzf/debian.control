@@ -1,0 +1,12 @@
+Source: fzf
+Section: utils
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/junegunn/fzf
+Standards-Version: 4.1.1
+Build-Depends: debhelper (>= 10), dh-golang, golang-go
+
+Package: fzf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: fzf built from upstream.
