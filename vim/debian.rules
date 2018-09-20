@@ -15,7 +15,6 @@ override_dh_auto_configure:
 		--enable-luainterp=yes \
 		--enable-gui=gtk2 \
 		--enable-cscope \
-		--enable-fail-if-missing \
-		--prefix=/usr
+		--enable-fail-if-missing
 
 override_dh_auto_test:
