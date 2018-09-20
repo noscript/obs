@@ -8,8 +8,8 @@ Build-Depends: debhelper (>= 10), device-tree-compiler, texinfo, python:any, lib
 
 Package: qemu
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Provides: qemu
-Conflicts: qemu
-Replaces: qemu
+Depends: ${misc:Depends}, ${shlibs:Depends}, seabios
+Provides: qemu, qemu-system, qemu-system-x86, qemu-user, qemu-utils
+Conflicts: qemu, qemu-system, qemu-system-x86, qemu-user, qemu-utils
+Replaces: qemu, qemu-system, qemu-system-x86, qemu-user, qemu-utils
 Description: QEMU built from upstream.
