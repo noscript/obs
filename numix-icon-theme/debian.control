@@ -4,7 +4,6 @@ Priority: extra
 Maintainer: Sergey Vlasov <sergey@vlasov.me>
 Homepage: http://numixproject.org/
 Standards-Version: 4.1.1
-Build-Depends: debhelper (>= 10)
 
 Package: numix-icon-theme
 Architecture: all
