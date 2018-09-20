@@ -4,4 +4,6 @@
 	dh $@
 
 override_dh_auto_configure:
-	dh_auto_configure -- --target-list=x86_64-softmmu
+	./configure \
+		--prefix=/usr \
+		--target-list=x86_64-softmmu
