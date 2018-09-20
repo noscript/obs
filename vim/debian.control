@@ -8,7 +8,7 @@ Build-Depends: autoconf, debhelper (>= 10), dpkg-dev (>= 1.18.8), libacl1-dev, l
 Build-Conflicts: autoconf2.13
 Build-Depends-Indep: docbook-utils, jadetex, texlive-htmlxml, docbook-xml, ghostscript, pdf2svg
 
-Package: vim-all
+Package: vim-gtk
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: gvim, vim, vim-common, vim-runtime, vim-doc, vim-gtk, vim-gui-common, vim-lua, vim-python, vim-ruby, vim-tcl, xxd

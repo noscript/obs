@@ -1,6 +1,6 @@
 Format: 3.0 (quilt)
 Source: vim
-Binary: vim-all
+Binary: vim-gtk
 Architecture: any
 Version: _DUMMY_
 DEBTRANSFORM-RELEASE: 1
