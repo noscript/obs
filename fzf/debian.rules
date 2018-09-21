@@ -9,5 +9,4 @@ override_dh_auto_install:
 	dh_auto_install
 	rm -rf $(CURDIR)/debian/fzf/usr/share/gocode
 	rm -rf $(CURDIR)/debian/fzf/usr/share/doc
-	man usr/share
 
