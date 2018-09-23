@@ -8,5 +8,6 @@ override_dh_auto_configure:
 
 override_dh_auto_build:
 	cd linux-source-*/
-	make ARCH=i386 defconfig
+	tar xavf /usr/src/linux-config-4.9/config.amd64_none_amd64.xz
+	mv config.amd64_none_amd64 .config
 	dh_auto_build -- bindeb-pkg LOCALVERSION=-obs
