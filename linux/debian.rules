@@ -4,8 +4,7 @@
 	dh $@
 
 override_dh_auto_configure:
-	find /usr/src/
-	tar xavf $(find /usr/src/ -type f -name 'linux-source-*.tar.xz')
+	tar xavf $(shell find /usr/src/ -type f -name 'linux-source-*.tar.xz')
 
 override_dh_auto_build:
 	cd linux-source-*/
