@@ -1,0 +1,11 @@
+Source: linux
+Section: kernel
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://linux.org
+Standards-Version: 4.1.1
+
+Package: linux-image-amd64
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, binutils, xz-utils
+Description: Debian kernel.

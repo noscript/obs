@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	tar xavf /usr/src/linux-source-*.tar.xz
+
+override_dh_auto_build:
+	cd linux-source-*
+	make ARCH=i386 defconfig
+	dh_auto_build -- bindeb-pkg LOCALVERSION=-obs
