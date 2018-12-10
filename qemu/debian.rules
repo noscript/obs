@@ -6,4 +6,5 @@
 override_dh_auto_configure:
 	./configure \
 		--prefix=/usr \
-		--target-list=x86_64-softmmu
+		--target-list=x86_64-softmmu \
+		--audio-drv-list=pa
