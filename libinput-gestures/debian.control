@@ -6,6 +6,6 @@ Homepage: https://github.com/bulletmark/libinput-gestures
 Standards-Version: 4.1.1
 
 Package: libinput-gestures
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, xdotool, wmctrl, libinput-tools
 Description: libinput-gestures built from upstream.
