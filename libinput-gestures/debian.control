@@ -1,0 +1,11 @@
+Source: libinput-gestures
+Section: x11
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/bulletmark/libinput-gestures
+Standards-Version: 4.1.1
+
+Package: libinput-gestures
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, xdotool, wmctrl, libinput-tools
+Description: libinput-gestures built from upstream.
