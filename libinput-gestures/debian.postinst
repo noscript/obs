@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ ! -z "$SUDO_USER" ]; then
-  echo "Adding user '$SUDO_USER' to group 'input'"
+  echo "Adding user '$SUDO_USER' to group 'input'."
   usermod -a -G input $SUDO_USER
 else
   echo "Before using libinput-gestures, add the user to 'input' group."
