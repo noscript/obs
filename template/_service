@@ -1,0 +1,27 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/noscript/TEMPLATE_NAME-obs</param>
+    <param name="filename">obs</param>
+    <param name="versionformat">%h</param>
+    <param name="extension">tar_</param>
+    <param name="extract">debian.changelog</param>
+    <param name="extract">debian.compat</param>
+    <param name="extract">debian.control</param>
+    <param name="extract">debian.rules</param>
+    <!--param name="extract">debian.postinst</param-->
+    <param name="extract">TEMPLATE_NAME.dsc</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/TEMPLATE_NAME/TEMPLATE_NAME</param>
+    <param name="filename">TEMPLATE_NAME</param>
+    <!--param name="revision">some_tag</param-->
+    <param name="versionformat">0~%cd.git0</param>
+  </service>
+  <service name="recompress">
+    <param name="file">_service:tar_scm:TEMPLATE_NAME-*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>

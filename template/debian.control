@@ -1,0 +1,11 @@
+Source: TEMPLATE_NAME
+Section: x11
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/TEMPLATE_NAME/TEMPLATE_NAME
+Standards-Version: 4.1.1
+
+Package: TEMPLATE_NAME
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: TEMPLATE_NAME built from upstream.
