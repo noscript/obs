@@ -1,0 +1,26 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/noscript/stderred-obs</param>
+    <param name="filename">obs</param>
+    <param name="versionformat">%h</param>
+    <param name="extension">tar_</param>
+    <param name="extract">debian.changelog</param>
+    <param name="extract">debian.compat</param>
+    <param name="extract">debian.control</param>
+    <param name="extract">debian.rules</param>
+    <param name="extract">stderred.dsc</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/sickill/stderred</param>
+    <param name="filename">stderred</param>
+    <param name="revision">399e3b1</param>
+    <param name="versionformat">0~%cd.git0</param>
+  </service>
+  <service name="recompress">
+    <param name="file">_service:tar_scm:stderred-*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>

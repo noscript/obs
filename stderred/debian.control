@@ -1,0 +1,11 @@
+Source: stderred
+Section: terminal
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/sickill/stderred
+Standards-Version: 4.1.1
+
+Package: stderred
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: stderred built from upstream.
