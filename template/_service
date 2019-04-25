@@ -16,8 +16,8 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/TEMPLATE_NAME/TEMPLATE_NAME</param>
     <param name="filename">TEMPLATE_NAME</param>
-    <!--param name="revision">some_tag</param-->
-    <param name="versionformat">0~%cd.git0</param>
+    <!--param name="revision">tag_or_sha</param-->
+    <param name="versionformat">0~%cd+@PARENT_TAG@.rev@TAG_OFFSET@+git%h</param>
   </service>
   <service name="recompress">
     <param name="file">_service:tar_scm:TEMPLATE_NAME-*.tar</param>
