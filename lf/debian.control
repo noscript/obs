@@ -1,0 +1,11 @@
+Source: lf
+Section: utils
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/gokcehan/lf
+Standards-Version: 4.1.1
+
+Package: lf
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: lf built from upstream.

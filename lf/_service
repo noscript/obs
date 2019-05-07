@@ -1,0 +1,26 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/noscript/lf-obs</param>
+    <param name="filename">obs</param>
+    <param name="versionformat">%h</param>
+    <param name="extension">tar_</param>
+    <param name="extract">debian.changelog</param>
+    <param name="extract">debian.compat</param>
+    <param name="extract">debian.control</param>
+    <param name="extract">debian.rules</param>
+    <param name="extract">lf.dsc</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/gokcehan/lf</param>
+    <param name="filename">lf</param>
+    <param name="revision">13fe193</param>
+    <param name="versionformat">0~%cd+@PARENT_TAG@.rev@TAG_OFFSET@+git%h</param>
+  </service>
+  <service name="recompress">
+    <param name="file">_service:tar_scm:lf-*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>
