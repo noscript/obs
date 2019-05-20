@@ -17,7 +17,7 @@
     <param name="filename">paper-icon-theme</param>
     <param name="revision">refs/tags/v1.4.0</param>
     <param name="versionrewrite-pattern">v\.?(.*)</param>
-    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@</param>
+    <param name="versionformat">0~%cd+@PARENT_TAG@.rev@TAG_OFFSET@+git%h</param>
   </service>
   <service name="recompress">
     <param name="file">_service:tar_scm:paper-icon-theme-*.tar</param>
