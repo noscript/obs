@@ -5,7 +5,6 @@
     <param name="filename">obs</param>
     <param name="versionformat">%h</param>
     <param name="extension">tar_</param>
-    <param name="exclude">numix-gtk-theme/_service</param>
     <param name="include">numix-gtk-theme</param>
     <param name="extract">numix-gtk-theme/*</param>
   </service>

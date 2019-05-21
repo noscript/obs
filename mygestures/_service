@@ -5,7 +5,6 @@
     <param name="filename">obs</param>
     <param name="versionformat">%h</param>
     <param name="extension">tar_</param>
-    <param name="exclude">mygestures/_service</param>
     <param name="include">mygestures</param>
     <param name="extract">mygestures/*</param>
   </service>

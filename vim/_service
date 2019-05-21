@@ -5,7 +5,6 @@
     <param name="filename">obs</param>
     <param name="versionformat">%h</param>
     <param name="extension">tar_</param>
-    <param name="exclude">vim/_service</param>
     <param name="include">vim</param>
     <param name="extract">vim/*</param>
   </service>

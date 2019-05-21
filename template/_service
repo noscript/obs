@@ -5,7 +5,6 @@
     <param name="filename">obs</param>
     <param name="versionformat">%h</param>
     <param name="extension">tar_</param>
-    <param name="exclude">TEMPLATE_NAME/_service</param>
     <param name="include">TEMPLATE_NAME</param>
     <param name="extract">TEMPLATE_NAME/*</param>
   </service>
