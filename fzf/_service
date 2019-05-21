@@ -1,16 +1,13 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">https://github.com/noscript/fzf-obs</param>
+    <param name="url">https://github.com/noscript/obs</param>
     <param name="filename">obs</param>
     <param name="versionformat">%h</param>
     <param name="extension">tar_</param>
-    <param name="extract">debian.changelog</param>
-    <param name="extract">debian.compat</param>
-    <param name="extract">debian.control</param>
-    <param name="extract">debian.install</param>
-    <param name="extract">debian.rules</param>
-    <param name="extract">fzf.dsc</param>
+    <param name="exclude">fzf/_service</param>
+    <param name="include">fzf</param>
+    <param name="extract">fzf/*</param>
   </service>
   <service name="tar_scm">
     <param name="scm">git</param>

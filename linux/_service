@@ -1,16 +1,13 @@
 <services>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">https://github.com/noscript/linux-obs</param>
+    <param name="url">https://github.com/noscript/obs</param>
     <param name="filename">obs</param>
     <param name="versionformat">%h</param>
     <param name="extension">tar_</param>
-    <param name="extract">debian.changelog</param>
-    <param name="extract">debian.compat</param>
-    <param name="extract">debian.control</param>
-    <param name="extract">debian.rules</param>
-    <param name="extract">linux.tar.gz</param>
-    <param name="extract">linux.dsc</param>
+    <param name="exclude">linux/_service</param>
+    <param name="include">linux</param>
+    <param name="extract">linux/*</param>
   </service>
   <service name="set_version">
     <param name="version">4.9-obs0</param>
