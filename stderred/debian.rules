@@ -5,4 +5,7 @@ DEB_BUILD_OPTIONS=noddebs
 %:
 	dh $@
 
-override_dh_auto_build override_dh_auto_test:
+override_dh_auto_build:
+	cmake -DCMAKE_INSTALL_PREFIX=/usr ./src
+
+override_dh_auto_test:
