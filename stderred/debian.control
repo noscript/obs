@@ -6,6 +6,6 @@ Homepage: https://github.com/sickill/stderred
 Standards-Version: 4.1.1
 
 Package: stderred
-Architecture: all
+Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: stderred built from upstream.

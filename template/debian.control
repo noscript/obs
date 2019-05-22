@@ -6,6 +6,6 @@ Homepage: https://github.com/TEMPLATE_NAME/TEMPLATE_NAME
 Standards-Version: 4.1.1
 
 Package: TEMPLATE_NAME
-Architecture: all
+Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: TEMPLATE_NAME built from upstream.
