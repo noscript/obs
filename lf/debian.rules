@@ -1,4 +1,6 @@
 #!/usr/bin/make -f
 
+export DH_GOPKG := github.com/gokcehan/lf
+
 %:
 	dh $@ --buildsystem=golang --with=golang
