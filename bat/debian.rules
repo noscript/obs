@@ -14,5 +14,5 @@ replace-with = "vendored-sources"
 [source.vendored-sources]
 directory = "vendor"
 EOF
-	tar -xf ../SOURCES/vendor.tar.gz
+	tar -xf ../SOURCES/vendor.tar.gz_
 	dh_auto_build
