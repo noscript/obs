@@ -1,3 +1,2 @@
 bin usr
-man usr/share
 shell usr/share/fzf
