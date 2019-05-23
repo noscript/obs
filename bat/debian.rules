@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+DEB_BUILD_OPTIONS=noddebs
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	cargo build --release

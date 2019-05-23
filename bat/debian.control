@@ -1,0 +1,11 @@
+Source: bat
+Section: utils
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/sharkdp/bat
+Standards-Version: 4.1.1
+
+Package: bat
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: bat built from upstream.
