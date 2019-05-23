@@ -3,7 +3,7 @@
 DEB_BUILD_OPTIONS=noddebs
 
 %:
-	dh $@
+	dh $@ --buildsystem cargo
 
 override_dh_auto_build:
 	mkdir .cargo
@@ -15,4 +15,4 @@ replace-with = "vendored-sources"
 directory = "vendor"
 EOF
 	tar -xf ../SOURCES/vendor.tar.gz
-	cargo build --release
+	dh_auto_build
