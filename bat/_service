@@ -12,7 +12,8 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/sharkdp/bat</param>
     <param name="filename">bat</param>
-    <param name="revision">e7c5561</param>
+    <param name="revision">v0.11.0</param>
+    <param name="versionrewrite-pattern">v(.*)</param>
     <param name="versionformat">0~%cd+@PARENT_TAG@.rev@TAG_OFFSET@+git%h</param>
   </service>
   <service name="recompress">
