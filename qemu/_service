@@ -14,7 +14,7 @@
     <param name="filename">qemu</param>
     <param name="versionrewrite-pattern">v(.*)</param>
     <param name="revision">v4.0.0</param>
-    <param name="versionformat">0~%cd+@PARENT_TAG@.rev@TAG_OFFSET@+git%h</param>
+    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">
     <param name="file">_service:tar_scm:qemu-*.tar</param>

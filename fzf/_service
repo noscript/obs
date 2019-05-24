@@ -13,7 +13,7 @@
     <param name="url">https://github.com/junegunn/fzf</param>
     <param name="filename">fzf</param>
     <param name="revision">0.18.0</param>
-    <param name="versionformat">0~%cd+@PARENT_TAG@.rev@TAG_OFFSET@+git%h</param>
+    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">
     <param name="file">_service:tar_scm:fzf-*.tar</param>

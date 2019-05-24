@@ -13,7 +13,7 @@
     <param name="url">https://github.com/noscript/mygestures</param>
     <param name="filename">mygestures</param>
     <!-- no tags yet -->
-    <param name="versionformat">0~%cd+git%h</param>
+    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">
     <param name="file">_service:tar_scm:mygestures-*.tar</param>

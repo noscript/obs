@@ -13,7 +13,7 @@
     <param name="url">https://github.com/sickill/stderred</param>
     <param name="filename">stderred</param>
     <param name="revision">399e3b1</param>
-    <param name="versionformat">0~%cd+@PARENT_TAG@.rev@TAG_OFFSET@+git%h</param>
+    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">
     <param name="file">_service:tar_scm:stderred-*.tar</param>
