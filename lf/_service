@@ -12,7 +12,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/gokcehan/lf</param>
     <param name="filename">lf</param>
-    <param name="revision">r12</param>
+    <param name="revision">34f39f9</param>
     <param name="versionrewrite-pattern">r(.*)</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
