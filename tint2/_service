@@ -1,0 +1,23 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/noscript/obs</param>
+    <param name="filename">obs</param>
+    <param name="versionformat">%h</param>
+    <param name="extension">tar_</param>
+    <param name="include">tint2</param>
+    <param name="extract">tint2/*</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://gitlab.com/o9000/tint2</param>
+    <param name="filename">tint2</param>
+    <param name="revision">784edacc</param>
+    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
+  </service>
+  <service name="recompress">
+    <param name="file">_service:tar_scm:tint2-*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>

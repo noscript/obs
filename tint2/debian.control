@@ -1,0 +1,11 @@
+Source: tint2
+Section: x11
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/tint2/tint2
+Standards-Version: 4.1.1
+
+Package: tint2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: tint2 built from upstream.
