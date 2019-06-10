@@ -2,7 +2,7 @@ Source: tint2
 Section: x11
 Priority: optional
 Maintainer: Sergey Vlasov <sergey@vlasov.me>
-Homepage: https://github.com/tint2/tint2
+Homepage: https://gitlab.com/o9000/tint2
 Standards-Version: 4.1.1
 
 Package: tint2
