@@ -1,0 +1,3 @@
+autoload usr/share/vim/addons
+bin usr/share/vim/addons
+

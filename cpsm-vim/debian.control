@@ -1,0 +1,11 @@
+Source: cpsm-vim
+Section: devel
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/nixprime/cpsm
+Standards-Version: 4.1.1
+
+Package: cpsm-vim
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: cpsm-vim built from upstream.
