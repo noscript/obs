@@ -12,7 +12,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/TEMPLATE_NAME/TEMPLATE_NAME</param>
     <param name="filename">TEMPLATE_NAME</param>
-    <!--<param name="revision">tag_or_sha</param>-->
+    <!--<param name="revision">branch_tag_or_sha</param>-->
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">
