@@ -1,0 +1,11 @@
+Source: ccls
+Section: x11
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/MaskRay/ccls
+Standards-Version: 4.1.1
+
+Package: ccls
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: ccls built from upstream.

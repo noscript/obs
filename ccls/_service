@@ -1,0 +1,28 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/noscript/obs</param>
+    <param name="filename">obs</param>
+    <param name="versionformat">%h</param>
+    <param name="extension">tar_</param>
+    <param name="include">ccls</param>
+    <param name="extract">ccls/*</param>
+  </service>
+  <service name="download_url">
+    <param name="path">8.0.0/clang+llvm-8.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz</param>
+    <param name="host">releases.llvm.org</param>
+    <param name="filename">clang+llvm-8.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz_</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/MaskRay/ccls</param>
+    <param name="filename">ccls</param>
+    <param name="revision">0.20190314.1</param>
+    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
+  </service>
+  <service name="recompress">
+    <param name="file">_service:tar_scm:ccls-*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>
