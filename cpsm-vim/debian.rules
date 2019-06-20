@@ -6,6 +6,6 @@ DEB_BUILD_OPTIONS=noddebs
 	dh $@
 
 override_dh_auto_build:
-	./install.sh
+	PY3=ON ./install.sh
 
 override_dh_auto_configure override_dh_auto_test:
