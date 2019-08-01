@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+.ONESHELL:
+DEB_BUILD_OPTIONS=noddebs
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	mkdir .cargo
+	cat > .cargo/config << EOF
+		[source.crates-io]
+		replace-with = "vendored-sources"
+
+		[source.vendored-sources]
+		directory = "vendor"
+	EOF
+	tar -xf ../SOURCES/vendor.tar.gz_
+	cargo build --release

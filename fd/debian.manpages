@@ -1,0 +1,2 @@
+#!/usr/bin/dh-exec
+doc/fd.1 => usr/share/man/man1/fdfind.1

@@ -1,0 +1,11 @@
+Source: fd
+Section: utils
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/sharkdp/fd
+Standards-Version: 4.1.1
+
+Package: fd-find
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: fd built from upstream.

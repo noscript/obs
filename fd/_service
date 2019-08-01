@@ -5,19 +5,19 @@
     <param name="filename">obs</param>
     <param name="versionformat">%h</param>
     <param name="extension">tar_</param>
-    <param name="include">TEMPLATE_NAME</param>
-    <param name="extract">TEMPLATE_NAME/*</param>
+    <param name="include">fd</param>
+    <param name="extract">fd/*</param>
   </service>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">https://github.com/TEMPLATE_NAME/TEMPLATE_NAME</param>
-    <param name="filename">TEMPLATE_NAME</param>
-    <!--<param name="versionrewrite-pattern">v(.*)</param>-->
-    <!--<param name="revision">branch_tag_or_sha</param>-->
+    <param name="url">https://github.com/sharkdp/fd</param>
+    <param name="filename">fd</param>
+    <param name="revision">630749f</param>
+    <param name="versionrewrite-pattern">v(.*)</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">
-    <param name="file">_service:tar_scm:TEMPLATE_NAME-*.tar</param>
+    <param name="file">_service:tar_scm:fd-*.tar</param>
     <param name="compression">gz</param>
   </service>
   <service name="set_version"/>
