@@ -17,3 +17,8 @@ override_dh_auto_build:
 	EOF
 	tar -xf ../SOURCES/vendor.tar.gz_
 	cargo build --release
+
+override_dh_auto_install:
+	mv target/release/fd target/release/fdfind
+	mv doc/fd.1 doc/fdfind.1
+	dh_auto_install
