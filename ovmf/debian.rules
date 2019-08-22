@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+SHELL=/bin/bash
+
+DEB_BUILD_OPTIONS=noddebs
+
+EDK2_TOOLCHAIN=GCC49
+OVMF_BUILD_DIR=Build/OvmfX64/RELEASE_$(EDK2_TOOLCHAIN)
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	ls ../SOURCES
+	# provided by _service:tar_scm:Logo.bmp:
+	cp ../SOURCES/Logo.bmp MdeModulePkg/Logo/
+	make -C BaseTools/
+	source ./edksetup.sh; build -a X64 -t $(EDK2_TOOLCHAIN) -b RELEASE -p OvmfPkg/OvmfPkgX64.dsc
+	mkdir debian/ovmf-install
+	cp $(OVMF_BUILD_DIR)/FV/OVMF_CODE.fd debian/ovmf-install/
+	cp $(OVMF_BUILD_DIR)/FV/OVMF_VARS.fd debian/ovmf-install/
+
+override_dh_auto_test:

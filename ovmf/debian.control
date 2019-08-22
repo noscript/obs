@@ -1,0 +1,11 @@
+Source: ovmf
+Section: x11
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/tianocore/edk2.git
+Standards-Version: 4.1.1
+
+Package: ovmf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: ovmf built from upstream.
