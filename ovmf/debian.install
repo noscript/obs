@@ -1,2 +1,1 @@
-debian/ovmf-install/OVMF_CODE*.fd	/usr/share/OVMF
-debian/ovmf-install/OVMF_VARS*.fd	/usr/share/OVMF
+debian/ovmf-install/OVMF_*.fd	/usr/share/OVMF

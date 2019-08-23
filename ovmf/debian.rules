@@ -17,7 +17,6 @@ override_dh_auto_build:
 	make -C BaseTools/
 	source ./edksetup.sh; build -a X64 -t $(EDK2_TOOLCHAIN) -b RELEASE -p OvmfPkg/OvmfPkgX64.dsc
 	mkdir debian/ovmf-install
-	cp $(OVMF_BUILD_DIR)/FV/OVMF_CODE.fd debian/ovmf-install/
-	cp $(OVMF_BUILD_DIR)/FV/OVMF_VARS.fd debian/ovmf-install/
+	cp $(OVMF_BUILD_DIR)/FV/OVMF_*.fd debian/ovmf-install/
 
 override_dh_auto_test:
