@@ -17,7 +17,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/MaskRay/ccls</param>
     <param name="filename">ccls</param>
-    <param name="revision">0.20190314.1</param>
+    <param name="revision">0.20190823.1</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">
