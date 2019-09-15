@@ -1,16 +1,11 @@
 #!/usr/bin/make -f
 
 DEB_BUILD_OPTIONS=noddebs
-ifneq ($(shell grep 'bionic\|stretch' /etc/os-release),)
+ifneq ($(shell grep bionic /etc/os-release),)
 # provided by _service:download_url:clang+llvm-8.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz_:
 $(shell tar -C ../SOURCES/ -xf ../SOURCES/clang+llvm-8.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz_)
 PREFIX_PATH := ../SOURCES/clang+llvm-8.0.0-x86_64-linux-gnu-ubuntu-18.04
-endif
-
-ifneq ($(shell grep bionic /etc/os-release),)
 CXX_COMPILER := g++-8
-else ifneq ($(shell grep stretch /etc/os-release),)
-CXX_COMPILER :=$(PREFIX_PATH)/bin/clang++
 else
 PREFIX_PATH := /usr/lib/llvm-7
 CXX_COMPILER := clang++-7
