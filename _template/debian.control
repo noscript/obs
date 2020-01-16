@@ -2,7 +2,7 @@ Source: TEMPLATE_NAME
 Section: x11
 Priority: optional
 Maintainer: Sergey Vlasov <sergey@vlasov.me>
-Homepage: https://github.com/TEMPLATE_NAME/TEMPLATE_NAME
+Homepage: GIT_URL
 Standards-Version: 4.1.1
 
 Package: TEMPLATE_NAME

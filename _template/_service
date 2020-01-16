@@ -10,7 +10,7 @@
   </service>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">https://github.com/TEMPLATE_NAME/TEMPLATE_NAME</param>
+    <param name="url">GIT_URL</param>
     <param name="filename">TEMPLATE_NAME</param>
     <!--<param name="versionrewrite-pattern">v(.*)</param>-->
     <!--<param name="revision">branch_tag_or_sha</param>-->
