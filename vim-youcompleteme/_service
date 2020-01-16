@@ -18,7 +18,7 @@
     <param name="url">https://github.com/ycm-core/YouCompleteMe</param>
     <param name="filename">vim-youcompleteme</param>
     <param name="revision">7efbb1d</param>
-    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
+    <param name="versionformat">%cd.git0+%h</param>
   </service>
   <service name="recompress">
     <param name="file">_service:tar_scm:vim-youcompleteme-*.tar</param>
