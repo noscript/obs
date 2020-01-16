@@ -11,7 +11,6 @@ OVMF_BUILD_DIR=Build/OvmfX64/RELEASE_$(EDK2_TOOLCHAIN)
 	dh $@
 
 override_dh_auto_build:
-	ls ../SOURCES
 	# provided by _service:tar_scm:Logo.bmp:
 	cp ../SOURCES/Logo.bmp MdeModulePkg/Logo/
 	make -C BaseTools/

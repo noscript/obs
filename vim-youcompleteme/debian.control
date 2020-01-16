@@ -1,0 +1,11 @@
+Source: vim-youcompleteme
+Section: editors
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/ycm-core/YouCompleteMe
+Standards-Version: 4.1.1
+
+Package: vim-youcompleteme
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: vim-youcompleteme built from upstream.

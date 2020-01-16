@@ -1,0 +1,28 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/noscript/obs</param>
+    <param name="filename">obs</param>
+    <param name="versionformat">%h</param>
+    <param name="extension">tar_</param>
+    <param name="include">vim-youcompleteme</param>
+    <param name="extract">vim-youcompleteme/*</param>
+  </service>
+  <service name="download_url">
+    <param name="path">ycm-core/clangd/clangd-9.0.0-x86_64-unknown-linux-gnu.tar.bz2</param>
+    <param name="host">dl.bintray.com</param>
+    <param name="filename">clangd-9.0.0-x86_64-unknown-linux-gnu.tar.bz2_</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/ycm-core/YouCompleteMe</param>
+    <param name="filename">vim-youcompleteme</param>
+    <param name="revision">7efbb1d</param>
+    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
+  </service>
+  <service name="recompress">
+    <param name="file">_service:tar_scm:vim-youcompleteme-*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>

@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+
+SHELL=/bin/bash
+
+DEB_BUILD_OPTIONS=noddebs
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	mkdir -p third_party/ycmd/third_party/clangd/cache
+	# provided by _service:download_url:clangd-9.0.0-x86_64-unknown-linux-gnu.tar.bz2_:
+	mv ../SOURCES/clangd-9.0.0-x86_64-unknown-linux-gnu.tar.bz2_ third_party/ycmd/third_party/clangd/cache/clangd-9.0.0-x86_64-unknown-linux-gnu.tar.bz2
+
+	python3 install.py --clangd-completer
+
+override_dh_auto_install:
+	rm -rf python/ycm/tests
+	rm -rf third_party/python-future
+	rm -rf third_party/pythonfutures
+	rm -rf third_party/requests_deps
+	rm -rf third_party/ycmd/ycmd/tests
+	rm -rf third_party/ycmd/ycmd/completers/{cs,cuda,go,java,javascript,objc,objcpp,python,rust,typescript,typescriptreact}
+	rm -rf third_party/ycmd/third_party/bottle/{test,docs}
+	rm -rf third_party/ycmd/third_party/cregex
+	rm -rf third_party/ycmd/third_party/generic_server
+	rm -rf third_party/ycmd/third_party/python-future
+	rm -rf third_party/ycmd/third_party/requests_deps
+	rm -rf third_party/ycmd/third_party/tern_runtime
+	rm -rf third_party/ycmd/third_party/waitress/{docs,waitress/tests}
+	dh_auto_install
+
+override_dh_auto_test:
