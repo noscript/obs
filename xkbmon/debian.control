@@ -1,0 +1,11 @@
+Source: xkbmon
+Section: x11
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/xkbmon/xkbmon
+Standards-Version: 4.1.1
+
+Package: xkbmon
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: xkbmon built from upstream.
