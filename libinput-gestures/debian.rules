@@ -5,4 +5,8 @@ DEB_BUILD_OPTIONS=noddebs
 %:
 	dh $@
 
-override_dh_auto_build override_dh_auto_test:
+override_dh_auto_build:
+	sed -i '1s/env python3/python3/' ./libinput-gestures
+	dh_auto_build
+
+override_dh_auto_test:
