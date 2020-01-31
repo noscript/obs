@@ -1,0 +1,2 @@
+target/release/alacritty usr/bin
+extra/linux/alacritty.desktop usr/share/applications

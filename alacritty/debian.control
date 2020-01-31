@@ -1,0 +1,11 @@
+Source: alacritty
+Section: x11
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/alacritty/alacritty
+Standards-Version: 4.1.1
+
+Package: alacritty
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: alacritty built from upstream.

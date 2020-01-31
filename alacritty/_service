@@ -1,0 +1,29 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/noscript/obs</param>
+    <param name="filename">obs</param>
+    <param name="versionformat">%h</param>
+    <param name="extension">tar_</param>
+    <param name="include">alacritty</param>
+    <param name="extract">alacritty/*</param>
+  </service>
+  <service name="download_url">
+    <param name="path">dist/rust-1.41.0-x86_64-unknown-linux-gnu.tar.gz</param>
+    <param name="host">static.rust-lang.org</param>
+    <param name="filename">rust-1.41.0-x86_64-unknown-linux-gnu.tar.gz_</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/alacritty/alacritty</param>
+    <param name="filename">alacritty</param>
+    <param name="versionrewrite-pattern">v(.*)</param>
+    <param name="revision">v0.4.1</param>
+    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
+  </service>
+  <service name="recompress">
+    <param name="file">_service:tar_scm:alacritty-*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>
