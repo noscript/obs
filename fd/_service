@@ -8,6 +8,11 @@
     <param name="include">fd</param>
     <param name="extract">fd/*</param>
   </service>
+  <service name="download_url">
+    <param name="path">dist/rust-1.41.0-x86_64-unknown-linux-gnu.tar.gz</param>
+    <param name="host">static.rust-lang.org</param>
+    <param name="filename">rust-1.41.0-x86_64-unknown-linux-gnu.tar.gz_</param>
+  </service>
   <service name="tar_scm">
     <param name="scm">git</param>
     <param name="url">https://github.com/sharkdp/fd</param>

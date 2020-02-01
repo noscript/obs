@@ -2,18 +2,17 @@
 
 .ONESHELL:
 DEB_BUILD_OPTIONS=noddebs
+RUST_DIR := $(shell readlink -f ../SOURCES)/rust-1.41.0-x86_64-unknown-linux-gnu
 
 %:
 	dh $@
 
 override_dh_auto_build:
-	mkdir .cargo
-	cat > .cargo/config << EOF
-		[source.crates-io]
-		replace-with = "vendored-sources"
+	# provided by _service:download_url:rust-1.41.0-x86_64-unknown-linux-gnu.tar.gz_:
+	echo "343ba8ef7397eab7b3bb2382e5e4cb08835a87bff5c8074382c0b6930a41948b  $(RUST_DIR).tar.gz_" | sha256sum -c
+	tar -xf $(RUST_DIR).tar.gz_ -C ../SOURCES
+	$(RUST_DIR)/install.sh --prefix=$(RUST_DIR)/_local --disable-ldconfig
+	export PATH=$(RUST_DIR)/_local/bin:$(PATH)
 
-		[source.vendored-sources]
-		directory = "vendor"
-	EOF
 	tar -xf ../SOURCES/vendor.tar.gz_
 	cargo build --release
