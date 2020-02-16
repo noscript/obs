@@ -7,6 +7,7 @@ sudo apt install osc
 # Check out the home project
 
 ```
+HOME_PROJECT=home:$OBS_USERNAME
 osc checkout $HOME_PROJECT
 rsync -avh ./$HOME_PROJECT/ .
 rm -rf ./$HOME_PROJECT
