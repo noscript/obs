@@ -1,2 +1,3 @@
 bin usr
 shell usr/share/fzf
+plugin usr/share/fzf
