@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+DEB_BUILD_OPTIONS=noddebs
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	autoheader
+	autoconf
+	dh_auto_configure
+
+override_dh_auto_build:
+	make -f Makefile.aut funcs.h
+	make
+	make -f Makefile.aut less.nro
+	make -f Makefile.aut lesskey.nro
+	make -f Makefile.aut lessecho.nro
+
+override_dh_auto_test:

@@ -1,0 +1,24 @@
+<services>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/noscript/obs</param>
+    <param name="filename">obs</param>
+    <param name="versionformat">%h</param>
+    <param name="extension">tar_</param>
+    <param name="include">less</param>
+    <param name="extract">less/*</param>
+  </service>
+  <service name="tar_scm">
+    <param name="scm">git</param>
+    <param name="url">https://github.com/gwsw/less</param>
+    <param name="filename">less</param>
+    <param name="versionrewrite-pattern">v(.*)</param>
+    <param name="revision">v551</param>
+    <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
+  </service>
+  <service name="recompress">
+    <param name="file">_service:tar_scm:less-*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+  <service name="set_version"/>
+</services>
