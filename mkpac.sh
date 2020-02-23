@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-if [[ $# -lt 1 ]]; then
+if [[ $# -lt 2 ]]; then
   echo "Usage: $(basename $0) PACKAGE_NAME [GIT_URL]" >&2
   exit 1
 fi
