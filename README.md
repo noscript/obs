@@ -66,7 +66,7 @@ osc remotebuildlog $(cat .osc/_project) $PACKAGE_NAME $(lsb_release -cs) $(arch)
 # List binaries
 
 ```
-osc list -b $(cat .osc/_project) $PACKAGE_NAME $(lsb_release -cs) $(arch)
+osc list -b $(cat .osc/_project) -r $(lsb_release -cs) -a $(arch) $PACKAGE_NAME
 ```
 
 # Download binaries
