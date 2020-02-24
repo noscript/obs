@@ -12,7 +12,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/tmux/tmux</param>
     <param name="filename">tmux</param>
-    <param name="revision">3.0</param>
+    <param name="revision">3.0a</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">
