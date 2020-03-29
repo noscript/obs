@@ -17,7 +17,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/sharkdp/bat</param>
     <param name="filename">bat</param>
-    <param name="revision">v0.11.0</param>
+    <param name="revision"><!--v0.11.0-->416a0fd</param>
     <param name="versionrewrite-pattern">v(.*)</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>

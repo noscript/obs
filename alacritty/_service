@@ -17,8 +17,8 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/alacritty/alacritty</param>
     <param name="filename">alacritty</param>
+    <param name="revision"><!--v0.4.1-->4d9253bb</param>
     <param name="versionrewrite-pattern">v(.*)</param>
-    <param name="revision">v0.4.1</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">

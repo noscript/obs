@@ -12,7 +12,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/numixproject/numix-gtk-theme</param>
     <param name="filename">numix-gtk-theme</param>
-    <param name="revision">refs/tags/2.6.7</param>
+    <param name="revision"><!--2.6.7-->2e58680</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">

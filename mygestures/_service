@@ -12,8 +12,8 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/deters/mygestures</param>
     <param name="filename">mygestures</param>
+    <param name="revision"><!--v2.0-->0e210b8</param>
     <param name="versionrewrite-pattern">v(.*)</param>
-    <param name="revision">v2.0</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">

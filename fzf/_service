@@ -12,7 +12,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/junegunn/fzf</param>
     <param name="filename">fzf</param>
-    <param name="revision">0.18.0</param>
+    <param name="revision"><!--0.18.0-->ff95134</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">
