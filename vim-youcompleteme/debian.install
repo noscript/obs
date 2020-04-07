@@ -3,7 +3,6 @@ doc          usr/share/vim/addons
 plugin       usr/share/vim/addons
 python/ycm   usr/share/vim/addons/python
 
-third_party/requests-futures         usr/share/vim/addons/third_party
 third_party/ycmd/ycmd                usr/share/vim/addons/third_party/ycmd
 third_party/ycmd/CORE_VERSION        usr/share/vim/addons/third_party/ycmd
 third_party/ycmd/.ycm_extra_conf.py  usr/share/vim/addons/third_party/ycmd

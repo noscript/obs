@@ -19,6 +19,7 @@ override_dh_auto_install:
 	rm -rf third_party/python-future
 	rm -rf third_party/pythonfutures
 	rm -rf third_party/requests_deps
+	rm -rf third_party/requests-futures
 	rm -rf third_party/ycmd/ycmd/tests
 	rm -rf third_party/ycmd/ycmd/completers/{cs,cuda,go,java,javascript,objc,objcpp,python,rust,typescript,typescriptreact}
 	rm -rf third_party/ycmd/third_party/bottle/{test,docs}

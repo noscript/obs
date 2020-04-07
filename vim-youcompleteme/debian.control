@@ -7,5 +7,5 @@ Standards-Version: 4.1.1
 
 Package: vim-youcompleteme
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3, python3-future, python3-requests, python3-requests-futures
 Description: vim-youcompleteme built from upstream.
