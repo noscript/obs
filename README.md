@@ -135,3 +135,14 @@ git commt
 git push
 osc commit -n
 ```
+
+#### Local build
+
+```
+sudo apt install fakeroot dpkg-dev debhelper
+osc getbinaries -d BINARIES $(cat .osc/_project) $PACKAGE_NAME $(lsb_release -cs) $(arch)
+dpkg-source -x $PACKAGE_NAME*.dsc
+cd $PACKAGE_NAME*
+dpkg-buildpackage  -us -uc
+ls ../*.deb
+```
