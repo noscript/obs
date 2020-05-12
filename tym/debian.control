@@ -1,0 +1,12 @@
+Source: tym
+Section: x11
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/endaaman/tym
+Standards-Version: 4.1.1
+
+Package: tym
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: x-terminal-emulator
+Description: tym built from upstream.
