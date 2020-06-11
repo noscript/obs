@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+DEB_BUILD_OPTIONS=noddebs
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	./configure --prefix /usr --no-elisp-files-install --no-elisp-bytecompile
+
+override_dh_auto_install:
+	dh_auto_install
+	rm $(CURDIR)/debian/rtags/usr/bin/gcc-rtags-wrapper.sh
+
+override_dh_auto_test:

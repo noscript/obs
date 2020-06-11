@@ -1,0 +1,11 @@
+Source: rtags
+Section: devel
+Priority: optional
+Maintainer: Sergey Vlasov <sergey@vlasov.me>
+Homepage: https://github.com/Andersbakken/rtags
+Standards-Version: 4.1.1
+
+Package: rtags
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: rtags built from upstream.
