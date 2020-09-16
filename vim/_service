@@ -12,7 +12,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/vim/vim</param>
     <param name="filename">vim</param>
-    <param name="revision"><!--v8.2.0090-->b376ace1a</param>
+    <param name="revision"><!--v8.2.1678-->d1f76afaf</param>
     <param name="versionrewrite-pattern">v(.*)</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
