@@ -10,9 +10,9 @@
   </service>
   <service name="tar_scm">
     <param name="scm">git</param>
-    <param name="url">https://github.com/noscript/tym</param>
+    <param name="url">https://github.com/endaaman/tym</param>
     <param name="filename">tym</param>
-    <param name="revision">ceba4f0</param>
+    <param name="revision">9186603</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
   <service name="recompress">
