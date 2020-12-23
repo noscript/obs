@@ -12,7 +12,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/qemu/qemu</param>
     <param name="filename">qemu</param>
-    <param name="revision"><!--v4.2.0-->b0ca999a43</param>
+    <param name="revision"><!--v4.0.0-->131b9a0570</param>
     <param name="versionrewrite-pattern">v(.*)</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
