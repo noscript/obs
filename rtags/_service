@@ -12,7 +12,7 @@
     <param name="scm">git</param>
     <param name="url">https://github.com/Andersbakken/rtags</param>
     <param name="filename">rtags</param>
-    <param name="revision"><!--master-->c0637f23</param>
+    <param name="revision"><!--master-->39339388</param>
     <param name="versionrewrite-pattern">v(.*)</param>
     <param name="versionformat">@PARENT_TAG@.git@TAG_OFFSET@+%h</param>
   </service>
